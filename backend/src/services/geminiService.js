@@ -2,7 +2,7 @@ const axios = require("axios");
 const cleanJsonResponse = require("../utils/cleanJsonResponse");
 const { detectEmergency, normalizeSeverity, scoreFromSeverity } = require("../utils/severity");
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-1.5-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 async function callGemini(prompt) {
   if (!process.env.GEMINI_API_KEY) return null;

@@ -1,7 +1,7 @@
 const axios = require("axios");
 const cleanJsonResponse = require("../utils/cleanJsonResponse");
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-1.5-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 function fallbackFollowups(symptoms = "") {
   const s = symptoms.toLowerCase();
